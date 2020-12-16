@@ -23,8 +23,3 @@ def heapSort(A):
 	for i in range(n-1, 0, -1):
 		A[i], A[0] = A[0], A[i] 
 		maximiza_heap(A, i, 0)
-
-
-A = [4,2,3,6,4,1,5]
-heapSort(A)
-print("\nVetor Ordenado: ",A,"\n")
