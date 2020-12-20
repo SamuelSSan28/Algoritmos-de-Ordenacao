@@ -1,0 +1,36 @@
+Quantidade de Elementos: 100 
+Quantidade de comparacoes: 1148 
+Tempo de execucao: 0.0
+ 
+Quantidade de Elementos: 500 
+Quantidade de comparacoes: 8671 
+Tempo de execucao: 0.0019936561584472656
+ 
+Quantidade de Elementos: 1000 
+Quantidade de comparacoes: 19788 
+Tempo de execucao: 0.013963460922241211
+ 
+Quantidade de Elementos: 5000 
+Quantidade de comparacoes: 127833 
+Tempo de execucao: 0.029921293258666992
+ 
+Quantidade de Elementos: 30000 
+Quantidade de comparacoes: 960452 
+Tempo de execucao: 0.3031895160675049
+ 
+Quantidade de Elementos: 80000 
+Quantidade de comparacoes: 2845107 
+Tempo de execucao: 0.9514546394348145
+ 
+Quantidade de Elementos: 100000 
+Quantidade de comparacoes: 3639030 
+Tempo de execucao: 1.1868276596069336
+ 
+Quantidade de Elementos: 150000 
+Quantidade de comparacoes: 5673678 
+Tempo de execucao: 1.6645467281341553
+ 
+Quantidade de Elementos: 200000 
+Quantidade de comparacoes: 7775586 
+Tempo de execucao: 3.071784496307373
+ 
