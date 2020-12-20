@@ -10,7 +10,7 @@ for i in vetoresAleatorios.readlines():
     vetores.append(list(map(toInt,i.split(","))))
 
 #teste heap
-i = 1
+i = -1
 heapSort(vetores[i])
-print(vetores[i])
+print(len(vetores[i]))
     
