@@ -18,8 +18,8 @@ i = 1
 
 #heapSort(vetores[i])
 #bubbleSort(vetores[i])
-#insertionSort(vetores[i])
+insertionSort(vetores[i])
 #mergeSort(vetores[i])
-quicksort(vetores[i])
+#quicksort(vetores[i])
 print(vetores[i])
     
