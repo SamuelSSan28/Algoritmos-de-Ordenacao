@@ -1,0 +1,16 @@
+Quantidade de Elementos: 100 
+Quantidade de comparacoes: None 
+Tempo de execucao: 0.000396728515625
+ 
+Quantidade de Elementos: 500 
+Quantidade de comparacoes: None 
+Tempo de execucao: 0.0009968280792236328
+ 
+Quantidade de Elementos: 1000 
+Quantidade de comparacoes: None 
+Tempo de execucao: 0.0029909610748291016
+ 
+Quantidade de Elementos: 5000 
+Quantidade de comparacoes: None 
+Tempo de execucao: 0.01492762565612793
+ 
