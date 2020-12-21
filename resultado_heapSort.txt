@@ -4,13 +4,9 @@ Tempo de execucao: 0.0
  
 Quantidade de Elementos: 500 
 Quantidade de comparacoes: 8671 
-Tempo de execucao: 0.0019884109497070312
+Tempo de execucao: 0.001931905746459961
  
 Quantidade de Elementos: 1000 
 Quantidade de comparacoes: 19788 
-Tempo de execucao: 0.0045795440673828125
- 
-Quantidade de Elementos: 5000 
-Quantidade de comparacoes: 127833 
-Tempo de execucao: 0.024483203887939453
+Tempo de execucao: 0.004000663757324219
  

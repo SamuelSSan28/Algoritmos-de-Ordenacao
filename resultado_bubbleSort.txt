@@ -10,7 +10,3 @@ Quantidade de Elementos: 1000
 Quantidade de comparacoes: None 
 Tempo de execucao: 0.0
  
-Quantidade de Elementos: 5000 
-Quantidade de comparacoes: None 
-Tempo de execucao: 0.0010051727294921875
- 

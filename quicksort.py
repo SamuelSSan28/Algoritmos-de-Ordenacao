@@ -1,5 +1,5 @@
 import sys
-sys.setrecursionlimit(10**8)
+#sys.setrecursionlimit(10**9)
 def quicksort(A, inicio=0, fim=None):
     contador_de_comparacoes = 0
     if fim is None:
