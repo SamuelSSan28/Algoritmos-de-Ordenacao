@@ -5,15 +5,17 @@ from mergesort import mergeSort
 from quicksort import quicksort
 import time
 
-arquivo = "vetoresAleatorios"
-vetoresAleatorios = open((arquivo+".txt"), "r")
-vetores = []
+def lerArquivo(nome):
+    arquivo = nome
+    vetoresAleatorios = open((arquivo+".txt"), "r")
+    vetores = []
+    for i in vetoresAleatorios.readlines():
+        vetores.append(list(map(toInt,i.split(","))))
+    return vetores
 
 def toInt(n):
       return int(n)
 
-for i in vetoresAleatorios.readlines():
-    vetores.append(list(map(toInt,i.split(","))))
 
 resultado_heapSort = "resultado_heapSort.txt"
 arquivo = open(resultado_heapSort, "w")
@@ -35,6 +37,9 @@ resultado_quicksort = "resultado_quicksort.txt"
 arquivo = open(resultado_quicksort, "w")
 arquivo.close()
 
+
+print('Executando Heap Sort')
+vetores = lerArquivo("vetoresAleatorios")
 for vet in vetores:
     start_time = time.time()
     quantidade_de_comparacoes = heapSort(vet)
@@ -45,6 +50,9 @@ for vet in vetores:
     arquivo.write("\n \n")
     arquivo.close()
 
+print('Executando Merge Sort')
+vetores = lerArquivo("vetoresAleatorios")
+for vet in vetores:
     start_time = time.time()
     quantidade_de_comparacoes = mergeSort(vet)
     tempo_de_execucao = (time.time() - start_time)
@@ -54,6 +62,9 @@ for vet in vetores:
     arquivo.write("\n \n")
     arquivo.close()
 
+print('Executando Bubble Sort')
+vetores = lerArquivo("vetoresAleatorios")
+for vet in vetores:
     start_time = time.time()
     quantidade_de_comparacoes = bubbleSort(vet)
     tempo_de_execucao = (time.time() - start_time)
@@ -63,6 +74,9 @@ for vet in vetores:
     arquivo.write("\n \n")
     arquivo.close()
 
+print('Executando Insertion Sort')
+vetores = lerArquivo("vetoresAleatorios")
+for vet in vetores:
     start_time = time.time()
     quantidade_de_comparacoes = insertionSort(vet)
     tempo_de_execucao = (time.time() - start_time)
@@ -71,7 +85,11 @@ for vet in vetores:
     arquivo.write("Quantidade de Elementos: {} \nQuantidade de comparacoes: {} \nTempo de execucao: {}".format(len(vet),quantidade_de_comparacoes,tempo_de_execucao))
     arquivo.write("\n \n")
     arquivo.close()
+'''
 
+print('Executando Quick Sort')
+vetores = lerArquivo("vetoresAleatorios")
+for vet in vetores:
     start_time = time.time()
     quantidade_de_comparacoes = quicksort(vet)
     tempo_de_execucao = (time.time() - start_time)
@@ -80,3 +98,5 @@ for vet in vetores:
     arquivo.write("Quantidade de Elementos: {} \nQuantidade de comparacoes: {} \nTempo de execucao: {}".format(len(vet),quantidade_de_comparacoes,tempo_de_execucao))
     arquivo.write("\n \n")
     arquivo.close()
+    '''
+
