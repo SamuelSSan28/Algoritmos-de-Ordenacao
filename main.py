@@ -2,8 +2,8 @@ from heapsort import heapSort
 from bubblesort import bubbleSort
 from insertionsort import insertionSort
 from mergesort import mergeSort
-from quicksort import quicksort
 from quicksort2 import quicksort2
+from mistosort import mistoSort
 import time
 
 def lerArquivo(nome):
@@ -42,21 +42,68 @@ resultado_mistoSort = "resultado_mistosort.txt"
 arquivo = open(resultado_mistoSort, "w")
 arquivo.close()
 
+
+print('\n\nAleatorios: ')
 print('Executando Misto Sort')
 vetores = lerArquivo("vetoresAleatorios")
 for vet in vetores:
-    print('Rodando para vetor de tamanho '+str(len(vet)))
     start_time = time.time()
     quantidade_de_comparacoes = mistoSort(vet)
     try: quantidade_de_comparacoes = mistoSort(vet)
     except: print('Erro')
     else:
-        tempo_de_execucao = (time.time() - start_time)
-        #Arquivo de Resposta
-        arquivo = open(resultado_mistoSort, "a")
-        arquivo.write("Quantidade de Elementos: {} \nQuantidade de comparacoes: {} \nTempo de execucao: {}".format(len(vet),quantidade_de_comparacoes,tempo_de_execucao))
-        arquivo.write("\n \n")
-        arquivo.close()
+       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time))
+
+print('Executando Quick Sort')
+vetores = lerArquivo("vetoresAleatorios")
+for vet in vetores:
+    start_time = time.time()
+    try: quantidade_de_comparacoes = quicksort2(vet)
+    except: print('Erro')
+    else:
+       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time))
+
+
+print('\n\nCrescentes: ')
+print('Executando Misto Sort')
+vetores = lerArquivo("vetoresCrecentes")
+for vet in vetores:
+    start_time = time.time()
+    quantidade_de_comparacoes = mistoSort(vet)
+    try: quantidade_de_comparacoes = mistoSort(vet)
+    except: print('Erro')
+    else:
+       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time))
+
+print('Executando Quick Sort')
+vetores = lerArquivo("vetoresCrecentes")
+for vet in vetores:
+    start_time = time.time()
+    try: quantidade_de_comparacoes = quicksort2(vet)
+    except: print('Erro')
+    else:
+       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time))
+
+
+print('\n\nDecrescente: ')
+print('Executando Misto Sort')
+vetores = lerArquivo("vetoresDecrecentes")
+for vet in vetores:
+    start_time = time.time()
+    quantidade_de_comparacoes = mistoSort(vet)
+    try: quantidade_de_comparacoes = mistoSort(vet)
+    except: print('Erro')
+    else:
+       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time))
+
+print('Executando Quick Sort')
+vetores = lerArquivo("vetoresDecrecentes")
+for vet in vetores:
+    start_time = time.time()
+    try: quantidade_de_comparacoes = quicksort2(vet)
+    except: print('Erro')
+    else:
+       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time))
 
 '''
 print('Executando Heap Sort')
@@ -120,18 +167,5 @@ for vet in vetores:
         arquivo.write("\n \n")
         arquivo.close()
 
-print('Executando Quick Sort')
-vetores = lerArquivo("vetoresAleatorios")
-for vet in vetores:
-    print('Rodando para vetor de tamanho '+str(len(vet)))
-    start_time = time.time()
-    try: quantidade_de_comparacoes = quicksort2(vet)
-    except: print('Erro')
-    else:
-        tempo_de_execucao = (time.time() - start_time)
-        #Arquivo de Resposta
-        arquivo = open(resultado_quicksort, "a")
-        arquivo.write("Quantidade de Elementos: {} \nQuantidade de comparacoes: {} \nTempo de execucao: {}".format(len(vet),quantidade_de_comparacoes,tempo_de_execucao))
-        arquivo.write("\n \n")
-        arquivo.close()
+
 '''

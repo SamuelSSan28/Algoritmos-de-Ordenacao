@@ -1,4 +1,4 @@
-from quicksort import quicksort
+from quicksort2 import quicksort2
 
 #ordenamento misto baseado em bubble sort e quick sort
 
@@ -18,6 +18,6 @@ def mistoSort(A):
 
     #se nao tiver ordenado, faz o quicksort
     if flag:
-        contador_de_comparacoes += quicksort(A)
+        contador_de_comparacoes += quicksort2(A)
 
     return contador_de_comparacoes
