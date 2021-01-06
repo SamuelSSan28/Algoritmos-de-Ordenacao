@@ -52,7 +52,7 @@ for vet in vetores:
     try: quantidade_de_comparacoes = mistoSort(vet)
     except: print('Erro')
     else:
-       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time))
+       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time)+' : '+str(quantidade_de_comparacoes)+' Comparações.')
 
 print('Executando Quick Sort')
 vetores = lerArquivo("vetoresAleatorios")
@@ -61,7 +61,7 @@ for vet in vetores:
     try: quantidade_de_comparacoes = quicksort2(vet)
     except: print('Erro')
     else:
-       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time))
+       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time)+' : '+str(quantidade_de_comparacoes)+' Comparações.')
 
 
 print('\n\nCrescentes: ')
@@ -73,7 +73,7 @@ for vet in vetores:
     try: quantidade_de_comparacoes = mistoSort(vet)
     except: print('Erro')
     else:
-       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time))
+       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time)+' : '+str(quantidade_de_comparacoes)+' Comparações.')
 
 print('Executando Quick Sort')
 vetores = lerArquivo("vetoresCrecentes")
@@ -82,7 +82,7 @@ for vet in vetores:
     try: quantidade_de_comparacoes = quicksort2(vet)
     except: print('Erro')
     else:
-       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time))
+       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time)+' : '+str(quantidade_de_comparacoes)+' Comparações.')
 
 
 print('\n\nDecrescente: ')
@@ -94,7 +94,7 @@ for vet in vetores:
     try: quantidade_de_comparacoes = mistoSort(vet)
     except: print('Erro')
     else:
-       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time))
+       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time)+' : '+str(quantidade_de_comparacoes)+' Comparações.')
 
 print('Executando Quick Sort')
 vetores = lerArquivo("vetoresDecrecentes")
@@ -103,7 +103,7 @@ for vet in vetores:
     try: quantidade_de_comparacoes = quicksort2(vet)
     except: print('Erro')
     else:
-       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time))
+       print('Rodando para vetor de tamanho '+str(len(vet))+': '+str(time.time() - start_time)+' : '+str(quantidade_de_comparacoes)+' Comparações.')
 
 '''
 print('Executando Heap Sort')
